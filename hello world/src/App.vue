@@ -1,18 +1,22 @@
 <script >
+import ToDo from './components/ToDo.vue';
+
 
 export default {
-  name: 'App',
-  data() {
-    return {
-      name: 'Hello World!'
-    }
-  }
+    name: 'App',
+    data() {
+        return {
+            name: 'Hello World!'
+        };
+    },
+    components: { ToDo }
 }
 
 </script>
 
 <template>
    <h1> {{ name }}</h1>
+   <ToDo/>
 </template>
 
 <style scoped>
