@@ -1,5 +1,6 @@
 <script >
 import ToDo from './components/ToDo.vue';
+import CounterApp from './components/CounterApp.vue';
 
 
 export default {
@@ -9,14 +10,14 @@ export default {
             name: 'Hello World!'
         };
     },
-    components: { ToDo }
+    components: { ToDo, CounterApp }
 }
 
 </script>
 
 <template>
-   <h1> {{ name }}</h1>
-   <ToDo/>
+  <div class="container"></div>
+  <CounterApp />
 </template>
 
 <style scoped>
@@ -44,6 +45,13 @@ header {
     display: flex;
     place-items: flex-start;
     flex-wrap: wrap;
+  }
+
+  .container {
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    align-items: center;
   }
 }
 </style>
