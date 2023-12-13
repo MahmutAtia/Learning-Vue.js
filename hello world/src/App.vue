@@ -1,6 +1,7 @@
 <script >
 import ToDo from './components/ToDo.vue';
 import CounterApp from './components/CounterApp.vue';
+import MonsterGame from './components/MonsterGame.vue';
 
 
 export default {
@@ -10,17 +11,17 @@ export default {
             name: 'Hello World!'
         };
     },
-    components: { ToDo, CounterApp }
+    components: { ToDo, CounterApp, MonsterGame }
 }
 
 </script>
 
 <template>
   <div class="container"></div>
-  <CounterApp />
+<MonsterGame />
 </template>
 
-<style scoped>
+<style >
 header {
   line-height: 1.5;
 }
