@@ -1,27 +1,30 @@
 <script >
-import ToDo from './components/ToDo.vue';
-import CounterApp from './components/CounterApp.vue';
+// import ToDo from './components/ToDo.vue';
+// import CounterApp from './components/CounterApp.vue';
 import MonsterGame from './components/MonsterGame.vue';
+import MainApp from './LearningResourcesApp/Main.vue';
 
 
 export default {
     name: 'App',
+    components: { MainApp },
     data() {
         return {
             name: 'Hello World!'
         };
     },
-    components: { ToDo, CounterApp, MonsterGame }
+    components: { MainApp,MonsterGame }
 }
 
 </script>
 
 <template>
-  <div class="container"></div>
-<MonsterGame />
+  <MainApp/>
+  
+  
 </template>
-
-<style >
+<!-- 
+<style  scoped>
 header {
   line-height: 1.5;
 }
@@ -55,4 +58,4 @@ header {
     align-items: center;
   }
 }
-</style>
+</style> -->
